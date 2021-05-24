@@ -17,14 +17,14 @@ class Application(tk.Frame):
         # background : 背景色の設定
         # text : テキスト
         # labelについて : https://kuroro.blog/python/Pj4Z7JBNRvcHZvtFqiKD/
-        label1 = tk.Label(panedWindow, width=50, background="red", text='test1')
+        label1 = tk.Label(panedWindow, width=30, background="red", text='test1')
 
         # panedwindow Widget(Frame)を親要素として、label Widgetを作成する。
         # width : 幅の設定
         # background : 背景色の設定
         # text : テキスト
         # labelについて : https://kuroro.blog/python/Pj4Z7JBNRvcHZvtFqiKD/
-        label2 = tk.Label(panedWindow, width=50, background="blue", text='test2')
+        label2 = tk.Label(panedWindow, width=30, background="blue", text='test2')
 
         # label Widget要素をpanedwindow Widget(Frame)へ格納
         # add(widget) : widgetをpanedwindow Widget(Frame)へ格納する。
