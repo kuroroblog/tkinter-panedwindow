@@ -27,10 +27,10 @@ class Application(tk.Frame):
         label2 = tk.Label(panedWindow, width=30, background="blue", text='test2')
 
         # label Widget要素をpanedwindow Widget(Frame)へ格納
-        # add(widget) : widgetをpanedwindow Widget(Frame)へ格納する。
+        # add(Widget) : Widgetをpanedwindow Widget(Frame)へ格納する。
         panedWindow.add(label1)
         # label Widget要素をpanedwindow Widget(Frame)へ格納
-        # add(widget) : widgetをpanedwindow Widget(Frame)へ格納する。
+        # add(Widget) : Widgetをpanedwindow Widget(Frame)へ格納する。
         panedWindow.add(label2)
 
         # Windowを親要素とした場合に、panedwindow Widget(Frame)をどのように配置するのか?
