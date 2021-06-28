@@ -10,21 +10,23 @@ class Application(tk.Frame):
         self.master.geometry("300x200")
 
         # Windowを親要素として、panedwindow Widget(Frame)を作成する。
-        # frameについて : https://kuroro.blog/python/P20XOidA5nh583fYRvxf/
+        # Frameについて : https://kuroro.blog/python/P20XOidA5nh583fYRvxf/
         panedWindow = tk.PanedWindow(self.master)
 
         # panedwindow Widget(Frame)を親要素として、label Widgetを作成する。
         # width : 幅の設定
         # background : 背景色の設定
-        # text : テキスト
-        # labelについて : https://kuroro.blog/python/Pj4Z7JBNRvcHZvtFqiKD/
+        # 色について : https://kuroro.blog/python/YcZ6Yh4PswqUzaQXwnG2/
+        # text : テキスト情報
+        # Labelについて : https://kuroro.blog/python/Pj4Z7JBNRvcHZvtFqiKD/
         label1 = tk.Label(panedWindow, width=30, background="red", text='test1')
 
         # panedwindow Widget(Frame)を親要素として、label Widgetを作成する。
         # width : 幅の設定
         # background : 背景色の設定
-        # text : テキスト
-        # labelについて : https://kuroro.blog/python/Pj4Z7JBNRvcHZvtFqiKD/
+        # 色について : https://kuroro.blog/python/YcZ6Yh4PswqUzaQXwnG2/
+        # text : テキスト情報
+        # Labelについて : https://kuroro.blog/python/Pj4Z7JBNRvcHZvtFqiKD/
         label2 = tk.Label(panedWindow, width=30, background="blue", text='test2')
 
         # label Widget要素をpanedwindow Widget(Frame)へ格納
