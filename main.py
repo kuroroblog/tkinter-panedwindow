@@ -12,7 +12,7 @@ class Application(tk.Frame):
         # Windowを親要素として、panedwindow Widget(Frame)を作成する。
         # <用語の説明>
         # panedwindow Widget(Frame)の中に配置される、Widgetのことを「ペイン」という。
-        # ペインとペインの間の空間を「さっし」という。さっしを選択した状態で、さっしを左右へ動かすとペインのサイズを自由に変更できる。
+        # ペインとペインの間の空間を「さっし」という。さっしを選択した状態で、さっしを左右(上下)へ動かすとペインのサイズを自由に変更できる。
         # さっしの中に取っ手を表示する場合、その取っ手のことを「handle」という。handleはさっしと同じ動作を行う。
         # showhandle : さっしの中へhandleを表示するかどうかの設定。True : 表示する, False : 表示しない。
         # sashwidth : さっしの幅を設定。
@@ -35,10 +35,10 @@ class Application(tk.Frame):
         # Labelについて : https://kuroro.blog/python/Pj4Z7JBNRvcHZvtFqiKD/
         label2 = tk.Label(panedWindow, width=30, background="blue", text='test2')
 
-        # label Widget要素をpanedwindow Widget(Frame)へ格納
+        # label Widget要素をpanedwindow Widget(Frame)へ格納。ペインとする。
         # add(Widget) : Widgetをpanedwindow Widget(Frame)へ格納する。
         panedWindow.add(label1)
-        # label Widget要素をpanedwindow Widget(Frame)へ格納
+        # label Widget要素をpanedwindow Widget(Frame)へ格納。ペインとする。
         # add(Widget) : Widgetをpanedwindow Widget(Frame)へ格納する。
         panedWindow.add(label2)
 
