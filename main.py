@@ -10,8 +10,14 @@ class Application(tk.Frame):
         self.master.geometry("300x200")
 
         # Windowを親要素として、panedwindow Widget(Frame)を作成する。
+        # <用語の説明>
+        # panedwindow Widget(Frame)の中に配置される、Widgetのことを「ペイン」という。
+        # ペインとペインの間の空間を「さっし」という。さっしを選択した状態で、さっしを左右へ動かすとペインのサイズを自由に変更できる。
+        # さっしの中に取っ手を表示する場合、その取っ手のことを「handle」という。handleはさっしと同じ動作を行う。
+        # showhandle : さっしの中へhandleを表示するかどうかの設定。True : 表示する, False : 表示しない。
+        # sashwidth : さっしの幅を設定。
         # Frameについて : https://kuroro.blog/python/P20XOidA5nh583fYRvxf/
-        panedWindow = tk.PanedWindow(self.master)
+        panedWindow = tk.PanedWindow(self.master, showhandle=True, sashwidth=20)
 
         # panedwindow Widget(Frame)を親要素として、label Widgetを作成する。
         # width : 幅の設定
