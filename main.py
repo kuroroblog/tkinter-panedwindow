@@ -16,7 +16,6 @@ class Application(tk.Frame):
         # また、さっしの中に表示される、四角いものを「handle」という。handleはさっしと同じ動作を行う。
         # showhandle : さっしの中へhandleを表示するかどうかの設定。True : 表示する, False : 表示しない。
         # sashwidth : さっしの幅を設定。
-        # Frameについて : https://kuroro.blog/python/P20XOidA5nh583fYRvxf/
         panedWindow = tk.PanedWindow(self.master, showhandle=True, sashwidth=20)
 
         # panedwindow Widget(Frame)を親要素として、label Widgetを作成する。
